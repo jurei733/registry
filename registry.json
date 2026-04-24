@@ -1,0 +1,671 @@
+{
+  "owners": [
+    "iqb-berlin"
+  ],
+  "repositories": [
+    {
+      "default_branch": "main",
+      "description": "This repo contains of all iqb data specifications related to verona-interfaces.",
+      "full_name": "iqb-berlin/verona-data-specifications",
+      "html_url": "https://github.com/iqb-berlin/verona-data-specifications",
+      "name": "verona-data-specifications",
+      "owner": "iqb-berlin",
+      "pushed_at": "2022-11-07",
+      "updated_at": "2021-12-15",
+      "version": {
+        "name": "0.1.0",
+        "published_at": "2022-11-07",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-data-specifications/releases/tag/0.1.0"
+      }
+    },
+    {
+      "default_branch": "master",
+      "description": null,
+      "full_name": "iqb-berlin/verona-editor-dan",
+      "html_url": "https://github.com/iqb-berlin/verona-editor-dan",
+      "module_metadata": {
+        "data": {
+          "@context": "https://w3id.org/iqb/verona-modules",
+          "@id": "iqb-editor-dan",
+          "@type": "editor",
+          "apiVersion": "2.0",
+          "description": {
+            "de": "Dieser Editor verarbeitet Aufgabendefinitionen in einem eigenen, undokumentierten Format. Anzeige- und Interaktionselemente können frei positioniert werden auf einer oder über mehreren Seiten.",
+            "en": "This Verona Editor uses a specific undocumented unit definition format. You can place elements for display or interaction purposes freely on one or more pages."
+          },
+          "maintainer": {
+            "email": "iqb-tbadev@hu-berlin.de",
+            "name": {
+              "de": "IQB - Institut zur Qualitätsentwicklung im Bildungswesen",
+              "en": "IQB - Institute for Educational Quality Improvement"
+            },
+            "url": "https://www.iqb.hu-berlin.de"
+          },
+          "name": {
+            "de": "IQB-Editor für komplexe Testaufgaben (Dan)",
+            "en": "IQB editor for complex test units (Dan)"
+          },
+          "notSupportedFeatures": [
+            "report-eager"
+          ],
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/iqb-berlin/verona-editor-plaintext"
+          },
+          "version": "3.1.0"
+        },
+        "kind": "json-ld",
+        "source": {
+          "name": "iqb-editor-dan@3.1.0.html",
+          "type": "release-asset",
+          "url": "https://github.com/iqb-berlin/verona-editor-dan/releases/download/v3.1.0/iqb-editor-dan%403.1.0.html"
+        }
+      },
+      "name": "verona-editor-dan",
+      "owner": "iqb-berlin",
+      "pushed_at": "2021-05-03",
+      "updated_at": "2021-05-03",
+      "version": {
+        "name": "v3.1.0",
+        "published_at": "2021-05-03",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-editor-dan/releases/tag/v3.1.0"
+      }
+    },
+    {
+      "default_branch": "master",
+      "description": "Provides one big text input element to edit script based unit definitions or to hack others.",
+      "full_name": "iqb-berlin/verona-editor-plaintext",
+      "html_url": "https://github.com/iqb-berlin/verona-editor-plaintext",
+      "module_metadata": {
+        "data": {
+          "@context": "https://w3id.org/iqb/verona-modules",
+          "@id": "iqb-editor-plaintext",
+          "@type": "editor",
+          "apiVersion": "2.0",
+          "description": {
+            "de": "Dieser Editor verarbeitet Aufgaben-/Seitendefinitionen als Text. Dies ist sinnvoll z. B. für Xml-, Html- oder scriptbasierte Formate, für die kein separater Editor bereitgestellt wird.\n\nAchtung: Für binäre oder JSON-Formate sollten andere Editoren genutzt werden, die die Konsistenz der Daten sicherstellen. Eine Bearbeitung dieser Formate mit diesem Text-Editor kann die Aufgaben-/Seitendefinitionen unbrauchbar machen.",
+            "en": "You can use this Verona Editor for all unit definitions, because the data format of unit definitions is technically always string/text. But be careful: improper changes may damage the definition so it's not usable anymore."
+          },
+          "maintainer": {
+            "email": "iqb-tbadev@hu-berlin.de",
+            "name": {
+              "de": "IQB - Institut zur Qualitätsentwicklung im Bildungswesen",
+              "en": "IQB - Institute for Educational Quality Improvement"
+            },
+            "url": "https://www.iqb.hu-berlin.de"
+          },
+          "name": {
+            "de": "IQB-Editor für Text",
+            "en": "IQB editor for plain text"
+          },
+          "notSupportedFeatures": [
+            "report-eager"
+          ],
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/iqb-berlin/verona-editor-plaintext"
+          },
+          "version": "1.0.1"
+        },
+        "kind": "json-ld",
+        "source": {
+          "name": "iqb-editor-plaintext@1.0.1.html",
+          "type": "release-asset",
+          "url": "https://github.com/iqb-berlin/verona-editor-plaintext/releases/download/v1.0.1/iqb-editor-plaintext%401.0.1.html"
+        }
+      },
+      "name": "verona-editor-plaintext",
+      "owner": "iqb-berlin",
+      "pushed_at": "2021-05-03",
+      "updated_at": "2021-08-17",
+      "version": {
+        "name": "v1.0.1",
+        "published_at": "2021-05-03",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-editor-plaintext/releases/tag/v1.0.1"
+      }
+    },
+    {
+      "default_branch": "develop",
+      "description": null,
+      "full_name": "iqb-berlin/verona-modules-aspect",
+      "html_url": "https://github.com/iqb-berlin/verona-modules-aspect",
+      "name": "verona-modules-aspect",
+      "owner": "iqb-berlin",
+      "pushed_at": "2026-04-23",
+      "updated_at": "2026-04-23",
+      "version": {
+        "name": "editor/2.12.3+player/2.12.3",
+        "published_at": "2026-02-17",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor/2.12.3%2Bplayer/2.12.3"
+      }
+    },
+    {
+      "default_branch": "master",
+      "description": null,
+      "full_name": "iqb-berlin/verona-modules-ib",
+      "html_url": "https://github.com/iqb-berlin/verona-modules-ib",
+      "name": "verona-modules-ib",
+      "owner": "iqb-berlin",
+      "pushed_at": "2025-05-26",
+      "updated_at": "2025-05-26",
+      "version": null
+    },
+    {
+      "default_branch": "master",
+      "description": null,
+      "full_name": "iqb-berlin/verona-modules-speedtest",
+      "html_url": "https://github.com/iqb-berlin/verona-modules-speedtest",
+      "name": "verona-modules-speedtest",
+      "owner": "iqb-berlin",
+      "pushed_at": "2026-01-16",
+      "updated_at": "2026-01-16",
+      "version": {
+        "name": "3.3.0",
+        "published_at": "2026-01-16",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-modules-speedtest/releases/tag/3.3.0"
+      }
+    },
+    {
+      "default_branch": "develop",
+      "description": null,
+      "full_name": "iqb-berlin/verona-modules-stars",
+      "html_url": "https://github.com/iqb-berlin/verona-modules-stars",
+      "name": "verona-modules-stars",
+      "owner": "iqb-berlin",
+      "pushed_at": "2026-04-23",
+      "updated_at": "2026-04-23",
+      "version": {
+        "name": "0.6.32",
+        "published_at": "2026-04-10",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-modules-stars/releases/tag/0.6.32"
+      }
+    },
+    {
+      "default_branch": "master",
+      "description": "A programmable item-player for surveys. Contains: Player-Plugin, Editor-Plugin",
+      "full_name": "iqb-berlin/verona-player-abi",
+      "html_url": "https://github.com/iqb-berlin/verona-player-abi",
+      "module_metadata": {
+        "data": {
+          "$schema": "https://raw.githubusercontent.com/verona-interfaces/metadata/master/verona-module-metadata.json",
+          "code": {
+            "licenseType": "MIT",
+            "licenseUrl": "https://opensource.org/licenses/MIT",
+            "repositoryType": "git",
+            "repositoryUrl": "https://github.com/iqb-berlin/verona-player-abi"
+          },
+          "description": [
+            {
+              "lang": "de",
+              "value": "Dieser Player interpretiert eine Script-Sprache, die speziell für die effiziente Erstellung umfangreicher Befragungen entwickelt wurde. Über die gängigen Frageformate hinaus werden bedingte Formularblöcke, dynamische Wiederholungen von Blöcken und Likert-skalen unterstützt."
+            },
+            {
+              "lang": "en",
+              "value": "You can use this Verona Player for surveys where you need a large number of questions. By interpreting it's own script language, the player just need one line per control definition. You can setup conditional blocks, repeating blocks or likert scale tables."
+            }
+          ],
+          "id": "iqb-player-abi",
+          "maintainer": {
+            "email": "iqb-tbadev@hu-berlin.de",
+            "name": [
+              {
+                "lang": "en",
+                "value": "IQB - Institute for Educational Quality Improvement."
+              },
+              {
+                "lang": "de",
+                "value": "IQB - Institut zur Qualitätsentwicklung im Bildungswesen."
+              }
+            ],
+            "url": "https://www.iqb.hu-berlin.de"
+          },
+          "metadataVersion": "2.0",
+          "name": [
+            {
+              "lang": "en",
+              "value": "IQB player for script language"
+            },
+            {
+              "lang": "de",
+              "value": "IQB-Player für Skripte (Abi)"
+            }
+          ],
+          "notSupportedFeatures": [
+            "log-policy",
+            "paging-mode"
+          ],
+          "specVersion": "5.0",
+          "type": "player",
+          "version": "5.0.0"
+        },
+        "kind": "json-ld",
+        "source": {
+          "name": "verona-player-abi-5.0.0.html",
+          "type": "release-asset",
+          "url": "https://github.com/iqb-berlin/verona-player-abi/releases/download/5.0.0/verona-player-abi-5.0.0.html"
+        }
+      },
+      "name": "verona-player-abi",
+      "owner": "iqb-berlin",
+      "pushed_at": "2026-02-07",
+      "updated_at": "2025-03-11",
+      "version": {
+        "name": "5.0.0",
+        "published_at": "2025-03-11",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-player-abi/releases/tag/5.0.0"
+      }
+    },
+    {
+      "default_branch": "master",
+      "description": "The IQB Verona Item Player and Editor until 2021.",
+      "full_name": "iqb-berlin/verona-player-dan",
+      "html_url": "https://github.com/iqb-berlin/verona-player-dan",
+      "module_metadata": {
+        "data": {
+          "$schema": "https://raw.githubusercontent.com/verona-interfaces/metadata/master/verona-module-metadata.json",
+          "code": {
+            "licenseType": "MIT",
+            "licenseUrl": "https://opensource.org/licenses/MIT",
+            "repositoryType": "git",
+            "repositoryUrl": "https://github.com/iqb-berlin/verona-player-dan"
+          },
+          "description": [
+            {
+              "lang": "de",
+              "value": "Dieser Player interpretiert Aufgabendefinitionen in einem eigenen, undokumentierten Format. Anzeige- und Interaktionselemente können frei positioniert werden auf einer oder über mehreren Seiten."
+            },
+            {
+              "lang": "en",
+              "value": "This Verona Player uses a specific undocumented unit definition format. You can place elements for display or interaction purposes freely on one or more pages."
+            }
+          ],
+          "id": "iqb-player-dan",
+          "maintainer": {
+            "email": "iqb-tbadev@hu-berlin.de",
+            "name": [
+              {
+                "lang": "en",
+                "value": "IQB - Institute for Educational Quality Improvement."
+              },
+              {
+                "lang": "de",
+                "value": "IQB - Institut zur Qualitätsentwicklung im Bildungswesen."
+              }
+            ],
+            "url": "https://www.iqb.hu-berlin.de"
+          },
+          "metadataVersion": "2.0",
+          "name": [
+            {
+              "lang": "en",
+              "value": "IQB player for static assessment units (dan)"
+            },
+            {
+              "lang": "de",
+              "value": "IQB-Player für statische Testaufgaben (Dan)"
+            }
+          ],
+          "notSupportedFeatures": [
+            "log-policy",
+            "paging-mode"
+          ],
+          "specVersion": "5.0",
+          "type": "player",
+          "version": "3.1.0-beta"
+        },
+        "kind": "json-ld",
+        "source": {
+          "name": "iqb-player-dan@3.1.0.html",
+          "type": "release-asset",
+          "url": "https://github.com/iqb-berlin/verona-player-dan/releases/download/3.1.0/iqb-player-dan%403.1.0.html"
+        }
+      },
+      "name": "verona-player-dan",
+      "owner": "iqb-berlin",
+      "pushed_at": "2023-01-03",
+      "updated_at": "2023-08-31",
+      "version": {
+        "name": "3.1.0",
+        "published_at": "2023-01-03",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-player-dan/releases/tag/3.1.0"
+      }
+    },
+    {
+      "default_branch": "develop",
+      "description": "player for lottie animations implementing verona specs",
+      "full_name": "iqb-berlin/verona-player-lottie",
+      "html_url": "https://github.com/iqb-berlin/verona-player-lottie",
+      "module_metadata": {
+        "data": {
+          "$schema": "https://raw.githubusercontent.com/verona-interfaces/metadata/master/verona-module-metadata.json",
+          "code": {
+            "licenseType": "MIT",
+            "licenseUrl": "https://opensource.org/licenses/MIT",
+            "repositoryType": "git",
+            "repositoryUrl": "https://github.com/iqb-berlin/verona-player-lottie"
+          },
+          "description": [
+            {
+              "lang": "de",
+              "value": "Todo"
+            }
+          ],
+          "id": "iqb-player-lottie",
+          "maintainer": {
+            "email": "iqb-tbadev@hu-berlin.de",
+            "name": [
+              {
+                "lang": "de",
+                "value": "IQB - Institut zur Qualitätsentwicklung im Bildungswesen"
+              }
+            ],
+            "url": "https://www.iqb.hu-berlin.de"
+          },
+          "metadataVersion": "2.0",
+          "name": [
+            {
+              "lang": "de",
+              "value": "IQB-Player für Lottie Animationen"
+            }
+          ],
+          "notSupportedFeatures": [
+            "log-policy"
+          ],
+          "specVersion": "6.0",
+          "type": "player",
+          "version": "1.0.0"
+        },
+        "kind": "json-ld",
+        "source": {
+          "name": "verona-player-lottie-1.0.0.html",
+          "type": "release-asset",
+          "url": "https://github.com/iqb-berlin/verona-player-lottie/releases/download/1.0.0/verona-player-lottie-1.0.0.html"
+        }
+      },
+      "name": "verona-player-lottie",
+      "owner": "iqb-berlin",
+      "pushed_at": "2026-04-22",
+      "updated_at": "2026-04-22",
+      "version": {
+        "name": "1.0.0",
+        "published_at": "2026-04-20",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-player-lottie/releases/tag/1.0.0"
+      }
+    },
+    {
+      "default_branch": "main",
+      "description": "A dependency-free, vanilla-js Verona-Player which can run HTML-forms as Units",
+      "full_name": "iqb-berlin/verona-player-simple",
+      "html_url": "https://github.com/iqb-berlin/verona-player-simple",
+      "module_metadata": {
+        "data": {
+          "$schema": "https://raw.githubusercontent.com/verona-interfaces/metadata/master/verona-module-metadata.json",
+          "code": {
+            "licenseType": "MIT",
+            "licenseUrl": "https://raw.githubusercontent.com/iqb-berlin/verona-player-simple/main/LICENSE",
+            "repositoryType": "git",
+            "repositoryUrl": "https://github.com/iqb-berlin/verona-player-simple"
+          },
+          "description": [
+            {
+              "lang": "en",
+              "value": "This is a simple, dependency-less, vanilla-js-written, but full-featured unit player, mainly as showcase for developers and for software-testing. It does implement the Verona 4.0.0-Standard and can be used for units containing simple any content in HTML-format. Unit Description ist the <code>form</code>-content as HTML. Just give some names to the form element, and the player does the rest. Use some special Ids for some special buttons."
+            }
+          ],
+          "id": "verona-player-simple",
+          "maintainer": {
+            "email": "iqb-tbadev@hu-berlin.de",
+            "name": [
+              {
+                "lang": "en",
+                "value": "IQB - Institute for Educational Quality Improvement"
+              }
+            ],
+            "url": "https://www.iqb.hu-berlin.de"
+          },
+          "metadataVersion": "2.0",
+          "name": [
+            {
+              "lang": "en",
+              "value": "Simple HTML Player"
+            }
+          ],
+          "specVersion": "6.0",
+          "type": "player",
+          "version": "6.0.4"
+        },
+        "kind": "json-ld",
+        "source": {
+          "name": "verona-player-simple-6.0.html",
+          "type": "release-asset",
+          "url": "https://github.com/iqb-berlin/verona-player-simple/releases/download/6.0.4/verona-player-simple-6.0.html"
+        }
+      },
+      "name": "verona-player-simple",
+      "owner": "iqb-berlin",
+      "pushed_at": "2026-04-22",
+      "updated_at": "2026-04-22",
+      "version": {
+        "name": "6.0.4",
+        "published_at": "2024-11-06",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-player-simple/releases/tag/6.0.4"
+      }
+    },
+    {
+      "default_branch": "master",
+      "description": "verona-player-speedtest",
+      "full_name": "iqb-berlin/verona-player-speedtest",
+      "html_url": "https://github.com/iqb-berlin/verona-player-speedtest",
+      "module_metadata": {
+        "data": {
+          "$schema": "https://raw.githubusercontent.com/verona-interfaces/metadata/master/verona-module-metadata.json",
+          "code": {
+            "licenseType": "MIT",
+            "licenseUrl": "https://opensource.org/licenses/MIT",
+            "repositoryType": "git",
+            "repositoryUrl": "https://github.com/iqb-berlin/verona-player-speedtest"
+          },
+          "description": [
+            {
+              "lang": "de",
+              "value": "The Speed-Test-Player is a Verona-player for reading speed tests. It's units are just strings - mostly simple sentences. The player shows the sentence and two buttons. Clicking one button submits response data (for first button `A` or for second button `B`) and requests the host to navigate to the next unit/page."
+            }
+          ],
+          "id": "verona-player-speedtest",
+          "maintainer": {
+            "email": "iqb-tbadev@hu-berlin.de",
+            "name": [
+              {
+                "lang": "en",
+                "value": "IQB - Institute for Educational Quality Improvement. It has been developed in behalf of the Institut für Bildungsanalysen Baden-Württemberg (IBBW)."
+              },
+              {
+                "lang": "de",
+                "value": "IQB - Institut zur Qualitätsentwicklung im Bildungswesen. Der Player wurde ursprünglich im Auftrag des Instituts für Bildungsanalysen Baden-Württemberg entwickelt."
+              }
+            ],
+            "url": "https://www.iqb.hu-berlin.de"
+          },
+          "metadataVersion": "2.0",
+          "name": [
+            {
+              "lang": "en",
+              "value": "Speed-Test-Player"
+            },
+            {
+              "lang": "de",
+              "value": "Speed-Test-Player"
+            }
+          ],
+          "notSupportedFeatures": [
+            "log-policy",
+            "paging-mode",
+            "navigation-denied"
+          ],
+          "specVersion": "5.0",
+          "type": "player",
+          "version": "1.2.0"
+        },
+        "kind": "json-ld",
+        "source": {
+          "name": "verona-player-speedtest-1.2.0.html",
+          "type": "release-asset",
+          "url": "https://github.com/iqb-berlin/verona-player-speedtest/releases/download/1.2.0/verona-player-speedtest-1.2.0.html"
+        }
+      },
+      "name": "verona-player-speedtest",
+      "owner": "iqb-berlin",
+      "pushed_at": "2024-04-10",
+      "updated_at": "2022-02-21",
+      "version": {
+        "name": "1.2.0",
+        "published_at": "2022-12-21",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-player-speedtest/releases/tag/1.2.0"
+      }
+    },
+    {
+      "default_branch": "develop",
+      "description": "web application to test offline player and unit definition",
+      "full_name": "iqb-berlin/verona-player-testbed",
+      "html_url": "https://github.com/iqb-berlin/verona-player-testbed",
+      "module_metadata": {
+        "data": {
+          "content": "width=device-width, initial-scale=1"
+        },
+        "kind": "html-meta",
+        "source": {
+          "name": "verona-player-testbed-3.2.1.html",
+          "type": "release-asset",
+          "url": "https://github.com/iqb-berlin/verona-player-testbed/releases/download/3.2.1/verona-player-testbed-3.2.1.html"
+        }
+      },
+      "name": "verona-player-testbed",
+      "owner": "iqb-berlin",
+      "pushed_at": "2026-01-28",
+      "updated_at": "2026-01-28",
+      "version": {
+        "name": "3.2.1",
+        "published_at": "2026-01-27",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-player-testbed/releases/tag/3.2.1"
+      }
+    },
+    {
+      "default_branch": "develop",
+      "description": "demo player for verona widget calls",
+      "full_name": "iqb-berlin/verona-player-widget",
+      "html_url": "https://github.com/iqb-berlin/verona-player-widget",
+      "module_metadata": {
+        "data": {
+          "$schema": "https://raw.githubusercontent.com/verona-interfaces/metadata/master/verona-module-metadata.json",
+          "code": {
+            "licenseType": "MIT",
+            "licenseUrl": "https://opensource.org/licenses/MIT",
+            "repositoryType": "git",
+            "repositoryUrl": "https://github.com/iqb-berlin/verona-player-dummy"
+          },
+          "description": [
+            {
+              "lang": "de",
+              "value": "IQB-Player zum Aufruf eines Widgets"
+            }
+          ],
+          "id": "verona-player-widget",
+          "maintainer": {
+            "email": "iqb-tbadev@hu-berlin.de",
+            "name": [
+              {
+                "lang": "de",
+                "value": "IQB - Institut zur Qualitätsentwicklung im Bildungswesen"
+              }
+            ],
+            "url": "https://www.iqb.hu-berlin.de"
+          },
+          "metadataVersion": "3.0",
+          "name": [
+            {
+              "lang": "de",
+              "value": "IQB-Player zum Aufruf eines Widgets"
+            }
+          ],
+          "notSupportedFeatures": [
+            "log-policy"
+          ],
+          "specVersion": "6.1",
+          "type": "player",
+          "version": "0.3.0"
+        },
+        "kind": "json-ld",
+        "source": {
+          "name": "verona-player-widget-0.3.0.html",
+          "type": "release-asset",
+          "url": "https://github.com/iqb-berlin/verona-player-widget/releases/download/0.3.0/verona-player-widget-0.3.0.html"
+        }
+      },
+      "name": "verona-player-widget",
+      "owner": "iqb-berlin",
+      "pushed_at": "2026-01-28",
+      "updated_at": "2026-01-28",
+      "version": {
+        "name": "0.3.0",
+        "published_at": "2026-01-28",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-player-widget/releases/tag/0.3.0"
+      }
+    },
+    {
+      "default_branch": "master",
+      "description": "This registry helps applications for online assessment to find players, editors and other verona-interfaces related modules.",
+      "full_name": "iqb-berlin/verona-registry",
+      "html_url": "https://github.com/iqb-berlin/verona-registry",
+      "name": "verona-registry",
+      "owner": "iqb-berlin",
+      "pushed_at": "2020-12-11",
+      "updated_at": "2021-02-14",
+      "version": null
+    },
+    {
+      "default_branch": "master",
+      "description": "simple calculator widget implementing verona specs",
+      "full_name": "iqb-berlin/verona-widget-calc",
+      "html_url": "https://github.com/iqb-berlin/verona-widget-calc",
+      "name": "verona-widget-calc",
+      "owner": "iqb-berlin",
+      "pushed_at": "2026-01-28",
+      "updated_at": "2026-01-28",
+      "version": {
+        "name": "0.1.3",
+        "published_at": "2026-01-28",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-widget-calc/releases/tag/0.1.3"
+      }
+    },
+    {
+      "default_branch": "develop",
+      "description": "Chemistry widgets for verona integration",
+      "full_name": "iqb-berlin/verona-widgets-chemistry",
+      "html_url": "https://github.com/iqb-berlin/verona-widgets-chemistry",
+      "name": "verona-widgets-chemistry",
+      "owner": "iqb-berlin",
+      "pushed_at": "2026-04-09",
+      "updated_at": "2026-04-09",
+      "version": {
+        "name": "0.2.0",
+        "published_at": "2026-01-28",
+        "type": "release",
+        "url": "https://github.com/iqb-berlin/verona-widgets-chemistry/releases/tag/0.2.0"
+      }
+    }
+  ]
+}
