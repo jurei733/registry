@@ -134,13 +134,13 @@
       "html_url": "https://github.com/iqb-berlin/verona-modules-aspect",
       "name": "verona-modules-aspect",
       "owner": "iqb-berlin",
-      "pushed_at": "2026-04-23",
-      "updated_at": "2026-04-23",
+      "pushed_at": "2026-06-24",
+      "updated_at": "2026-06-22",
       "version": {
-        "name": "editor/2.12.3+player/2.12.3",
-        "published_at": "2026-02-17",
+        "name": "editor/2.12.5+player/2.12.5",
+        "published_at": "2026-05-12",
         "type": "release",
-        "url": "https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor/2.12.3%2Bplayer/2.12.3"
+        "url": "https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor/2.12.5%2Bplayer/2.12.5"
       }
     },
     {
@@ -177,13 +177,13 @@
       "html_url": "https://github.com/iqb-berlin/verona-modules-stars",
       "name": "verona-modules-stars",
       "owner": "iqb-berlin",
-      "pushed_at": "2026-04-23",
-      "updated_at": "2026-04-23",
+      "pushed_at": "2026-06-26",
+      "updated_at": "2026-06-24",
       "version": {
-        "name": "0.6.32",
-        "published_at": "2026-04-10",
+        "name": "0.6.40",
+        "published_at": "2026-06-24",
         "type": "release",
-        "url": "https://github.com/iqb-berlin/verona-modules-stars/releases/tag/0.6.32"
+        "url": "https://github.com/iqb-berlin/verona-modules-stars/releases/tag/0.6.40"
       }
     },
     {
@@ -369,7 +369,7 @@
             ],
             "url": "https://www.iqb.hu-berlin.de"
           },
-          "metadataVersion": "2.0",
+          "metadataVersion": "3.1",
           "name": [
             {
               "lang": "de",
@@ -380,25 +380,25 @@
             "log-policy"
           ],
           "specVersion": "6.0",
-          "type": "player",
-          "version": "1.0.0"
+          "type": "PLAYER",
+          "version": "1.0.6"
         },
         "kind": "json-ld",
         "source": {
-          "name": "verona-player-lottie-1.0.0.html",
+          "name": "iqb-player-lottie-1.0.6.html",
           "type": "release-asset",
-          "url": "https://github.com/iqb-berlin/verona-player-lottie/releases/download/1.0.0/verona-player-lottie-1.0.0.html"
+          "url": "https://github.com/iqb-berlin/verona-player-lottie/releases/download/1.0.6/iqb-player-lottie-1.0.6.html"
         }
       },
       "name": "verona-player-lottie",
       "owner": "iqb-berlin",
-      "pushed_at": "2026-04-22",
-      "updated_at": "2026-04-22",
+      "pushed_at": "2026-06-22",
+      "updated_at": "2026-06-16",
       "version": {
-        "name": "1.0.0",
-        "published_at": "2026-04-20",
+        "name": "1.0.6",
+        "published_at": "2026-05-08",
         "type": "release",
-        "url": "https://github.com/iqb-berlin/verona-player-lottie/releases/tag/1.0.0"
+        "url": "https://github.com/iqb-berlin/verona-player-lottie/releases/tag/1.0.6"
       }
     },
     {
@@ -658,13 +658,13 @@
       "html_url": "https://github.com/iqb-berlin/verona-widgets-chemistry",
       "name": "verona-widgets-chemistry",
       "owner": "iqb-berlin",
-      "pushed_at": "2026-04-09",
-      "updated_at": "2026-04-09",
+      "pushed_at": "2026-06-23",
+      "updated_at": "2026-06-23",
       "version": {
-        "name": "0.2.0",
-        "published_at": "2026-01-28",
+        "name": "1.0.0",
+        "published_at": "2026-06-23",
         "type": "release",
-        "url": "https://github.com/iqb-berlin/verona-widgets-chemistry/releases/tag/0.2.0"
+        "url": "https://github.com/iqb-berlin/verona-widgets-chemistry/releases/tag/1.0.0"
       }
     }
   ]

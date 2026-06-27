@@ -5,7 +5,7 @@ This repository is a generated catalog of Verona-related repositories.
 - Scanned owners: `iqb-berlin`
 - Sync triggers: daily schedule, manual dispatch, and `repository_dispatch` with `event_type=registry-sync`
 - Generated files: `README.md` and `registry.json`
-- Metadata precedence: release asset HTML, then default-branch HTML, then GitHub release/tag metadata
+- Metadata precedence: release asset HTML, then matching release/tag ref HTML, then GitHub release/tag metadata
 
 ## Repositories
 
@@ -98,8 +98,8 @@ This repository is a generated catalog of Verona-related repositories.
 ### [verona-modules-aspect](https://github.com/iqb-berlin/verona-modules-aspect)
 - Description: No repository description.
 - Default branch: `develop`
-- Last pushed: 2026-04-23
-- Latest release: [editor/2.12.3+player/2.12.3](https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor/2.12.3%2Bplayer/2.12.3) (2026-02-17)
+- Last pushed: 2026-06-24
+- Latest release: [editor/2.12.5+player/2.12.5](https://github.com/iqb-berlin/verona-modules-aspect/releases/tag/editor/2.12.5%2Bplayer/2.12.5) (2026-05-12)
 
 ### [verona-modules-ib](https://github.com/iqb-berlin/verona-modules-ib)
 - Description: No repository description.
@@ -116,8 +116,8 @@ This repository is a generated catalog of Verona-related repositories.
 ### [verona-modules-stars](https://github.com/iqb-berlin/verona-modules-stars)
 - Description: No repository description.
 - Default branch: `develop`
-- Last pushed: 2026-04-23
-- Latest release: [0.6.32](https://github.com/iqb-berlin/verona-modules-stars/releases/tag/0.6.32) (2026-04-10)
+- Last pushed: 2026-06-26
+- Latest release: [0.6.40](https://github.com/iqb-berlin/verona-modules-stars/releases/tag/0.6.40) (2026-06-24)
 
 ### [verona-player-abi](https://github.com/iqb-berlin/verona-player-abi)
 - Description: A programmable item-player for surveys. Contains: Player-Plugin, Editor-Plugin
@@ -246,9 +246,9 @@ This repository is a generated catalog of Verona-related repositories.
 ### [verona-player-lottie](https://github.com/iqb-berlin/verona-player-lottie)
 - Description: player for lottie animations implementing verona specs
 - Default branch: `develop`
-- Last pushed: 2026-04-22
-- Latest release: [1.0.0](https://github.com/iqb-berlin/verona-player-lottie/releases/tag/1.0.0) (2026-04-20)
-- Module metadata: `json-ld` extracted from release asset `verona-player-lottie-1.0.0.html`
+- Last pushed: 2026-06-22
+- Latest release: [1.0.6](https://github.com/iqb-berlin/verona-player-lottie/releases/tag/1.0.6) (2026-05-08)
+- Module metadata: `json-ld` extracted from release asset `iqb-player-lottie-1.0.6.html`
 
 ```json
 {
@@ -276,7 +276,7 @@ This repository is a generated catalog of Verona-related repositories.
     ],
     "url": "https://www.iqb.hu-berlin.de"
   },
-  "metadataVersion": "2.0",
+  "metadataVersion": "3.1",
   "name": [
     {
       "lang": "de",
@@ -287,8 +287,8 @@ This repository is a generated catalog of Verona-related repositories.
     "log-policy"
   ],
   "specVersion": "6.0",
-  "type": "player",
-  "version": "1.0.0"
+  "type": "PLAYER",
+  "version": "1.0.6"
 }
 ```
 
@@ -474,5 +474,5 @@ This repository is a generated catalog of Verona-related repositories.
 ### [verona-widgets-chemistry](https://github.com/iqb-berlin/verona-widgets-chemistry)
 - Description: Chemistry widgets for verona integration
 - Default branch: `develop`
-- Last pushed: 2026-04-09
-- Latest release: [0.2.0](https://github.com/iqb-berlin/verona-widgets-chemistry/releases/tag/0.2.0) (2026-01-28)
+- Last pushed: 2026-06-23
+- Latest release: [1.0.0](https://github.com/iqb-berlin/verona-widgets-chemistry/releases/tag/1.0.0) (2026-06-23)

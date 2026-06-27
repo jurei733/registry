@@ -4,7 +4,7 @@ This repository is generated. The source of truth is:
 
 - GitHub repository metadata
 - Latest release or latest tag metadata
-- Module metadata extracted from HTML, preferring release assets and then the default branch
+- Module metadata extracted from HTML, preferring release assets and then the matching release or tag ref
 
 ## Updating the registry
 

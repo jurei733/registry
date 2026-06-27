@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import json
 import os
 import sys
@@ -204,9 +205,68 @@ def pick_repository_html_path(tree: dict[str, Any] | None) -> str | None:
     return candidates[0][2]
 
 
+def get_tree_for_ref(
+    client: GitHubClient,
+    repo_full_name: str,
+    ref: str,
+) -> dict[str, Any] | None:
+    encoded_ref = quote(ref, safe="")
+    commit = client.get_json(
+        f"{API_ROOT}/repos/{repo_full_name}/commits/{encoded_ref}",
+        optional=True,
+    )
+    if not commit:
+        return None
+
+    tree_sha = commit.get("commit", {}).get("tree", {}).get("sha")
+    if not tree_sha:
+        return None
+
+    return client.get_json(
+        f"{API_ROOT}/repos/{repo_full_name}/git/trees/{tree_sha}",
+        optional=True,
+        recursive=1,
+    )
+
+
+def get_file_text_at_ref(
+    client: GitHubClient,
+    repo_full_name: str,
+    path: str,
+    ref: str,
+) -> str | None:
+    encoded_path = quote(path, safe="/")
+    payload = client.get_json(
+        f"{API_ROOT}/repos/{repo_full_name}/contents/{encoded_path}",
+        optional=True,
+        ref=ref,
+    )
+    if not payload or payload.get("type") != "file":
+        return None
+
+    content = payload.get("content")
+    if not content:
+        return None
+
+    encoding = payload.get("encoding")
+    if encoding == "base64":
+        return base64.b64decode(content).decode("utf-8")
+
+    return content
+
+
+def get_metadata_ref(repo: dict[str, Any], version: dict[str, Any] | None) -> tuple[str, str]:
+    if version and version["type"] == "release":
+        return version["name"], "release-tag"
+    if version and version["type"] == "tag":
+        return version["name"], "tag"
+    return repo["default_branch"], "default-branch"
+
+
 def fetch_module_metadata(
     client: GitHubClient,
     repo: dict[str, Any],
+    version: dict[str, Any] | None,
     release: dict[str, Any] | None,
 ) -> dict[str, Any] | None:
     release_asset = pick_release_html_asset(release)
@@ -224,21 +284,13 @@ def fetch_module_metadata(
                     **metadata,
                 }
 
-    tree = client.get_json(
-        f"{API_ROOT}/repos/{repo['full_name']}/git/trees/{repo['default_branch']}",
-        optional=True,
-        recursive=1,
-    )
+    metadata_ref, metadata_ref_type = get_metadata_ref(repo, version)
+    tree = get_tree_for_ref(client, repo["full_name"], metadata_ref)
     html_path = pick_repository_html_path(tree)
     if not html_path:
         return None
 
-    raw_path = quote(html_path, safe="/")
-    html = client.get_text(
-        "https://raw.githubusercontent.com/"
-        f"{repo['full_name']}/{repo['default_branch']}/{raw_path}",
-        optional=True,
-    )
+    html = get_file_text_at_ref(client, repo["full_name"], html_path, metadata_ref)
     if not html:
         return None
 
@@ -248,10 +300,10 @@ def fetch_module_metadata(
 
     return {
         "source": {
-            "type": "default-branch-file",
+            "type": f"{metadata_ref_type}-file",
             "path": html_path,
-            "branch": repo["default_branch"],
-            "url": f"{repo['html_url']}/blob/{repo['default_branch']}/{html_path}",
+            "ref": metadata_ref,
+            "url": f"{repo['html_url']}/blob/{metadata_ref}/{html_path}",
         },
         **metadata,
     }
@@ -283,7 +335,7 @@ def build_version_info(
         version = {
             "type": "tag",
             "name": tag["name"],
-            "url": f"{repo['html_url']}/releases/tag/{encoded_tag_name}",
+            "url": f"{repo['html_url']}/tree/{encoded_tag_name}",
         }
 
     return version, release
@@ -321,7 +373,7 @@ def collect_repositories(client: GitHubClient, owners: list[str]) -> list[dict[s
             }
 
             if is_module:
-                module_metadata = fetch_module_metadata(client, repo, release)
+                module_metadata = fetch_module_metadata(client, repo, version, release)
                 if module_metadata:
                     repository["module_metadata"] = module_metadata
 
@@ -341,7 +393,7 @@ def render_readme(registry: dict[str, Any]) -> str:
         f"- Scanned owners: {owners}",
         "- Sync triggers: daily schedule, manual dispatch, and `repository_dispatch` with `event_type=registry-sync`",
         "- Generated files: `README.md` and `registry.json`",
-        "- Metadata precedence: release asset HTML, then default-branch HTML, then GitHub release/tag metadata",
+        "- Metadata precedence: release asset HTML, then matching release/tag ref HTML, then GitHub release/tag metadata",
         "",
         "## Repositories",
         "",
@@ -371,9 +423,8 @@ def render_readme(registry: dict[str, Any]) -> str:
             if source["type"] == "release-asset":
                 source_label = f"release asset `{source['name']}`"
             else:
-                source_label = (
-                    f"default branch file [`{source['path']}`]({source['url']})"
-                )
+                source_ref_kind = source["type"].removesuffix("-file").replace("-", " ")
+                source_label = f"{source_ref_kind} file [`{source['path']}`]({source['url']})"
             lines.append(
                 f"- Module metadata: `{module_metadata['kind']}` extracted from {source_label}"
             )
